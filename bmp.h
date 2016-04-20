@@ -4,7 +4,7 @@
 #include"color.h"
 #include<string>
 
-extern const float EPS;
+extern const double EPS;
 
 typedef unsigned char byte;
 typedef unsigned short word;

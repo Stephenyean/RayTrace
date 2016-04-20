@@ -11,11 +11,13 @@ public:
 	SpotLight spotLight;
 	Sphere O;
 	Color m_color;
-	double limitWeight;
-	double lambda;
-	Color rayTrace(Vec3 S, Direction direction, double weight, Color color);
-	Color calDiffusion(Vec3 S ,Vec3 R,Vec3 E,double weight,Color color);
-	Color calRefraction(Vec3 S, Vec3 D, Vec3 E, double weight, Color color,bool& in);
+	float limitWeight;
+	float lambda;
+	//Color rayTrace(Vec3 S, Direction direction, float weight, Color color);
+	Color rayTrace(Ray& inRay);
+	Color calDiffusion(Ray& inRay, Vec3 I, Vec3 Normal, Vec3 Out);
+	//Color calDiffusion(Vec3 S ,Vec3 R,Vec3 E,float weight,Color color);
+	//Color calRefraction(Vec3 S, Vec3 D, Vec3 E, float weight, Color color,bool& in);
 	//void intersect(Vec3 S, Direction direction);
 	//Vec3 getNearestIntersection(Vec3 S, Direction direction);
 };
