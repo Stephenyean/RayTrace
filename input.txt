@@ -1,5 +1,5 @@
 M:	1000	N:	1000
-MaxDepth: 5 MIN_WEIGHT 1e-5
+MaxDepth: 1 MIN_WEIGHT 1e-5
 
 lx:	0	ly: -1000 lz: 0
 lr:	1.0	lg: 1.0	lb:	1.0
